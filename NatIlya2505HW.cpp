@@ -7,15 +7,15 @@ using namespace std;
 
 void printTable()
 {
-    House house;
-    Flat flat;
+    House* house;
+    Flat* flat;
     cout << "Дом "; 
-    house.getNameOfHouse();
+    house->getNameOfHouse();
     cout << "\nНомер квартиры.\tКоличество проживающих.\n";
-    int flats = house.getAmountOfFlats();
+    int flats = house->getAmountOfFlats();
     for (int i = 0; i < flats; i++)
     {
-        cout << i + 1 << "\t\t\t\t" << flat.getAmountOfResident();
+        cout << i + 1 << "\t\t\t\t" << flat->getAmountOfResident();
     }
 
 }
