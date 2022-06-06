@@ -11,9 +11,9 @@ public:
 
 	void setNameOfHouse(char buffer[30]);
 	void setAmountOfFlats(int amount);
-	void getNameOfHouse()
+	char* getNameOfHouse() 
 	{
-		cout << nameOfHouse;
+		return nameOfHouse;
 	}
 	int getAmountOfFlats()
 	{

@@ -5,20 +5,21 @@
 #include "Resident.h"
 using namespace std;
 
-void printTable()
-{
-    House* house;
-    Flat* flat;
-    cout << "Дом "; 
-    house->getNameOfHouse();
-    cout << "\nНомер квартиры.\tКоличество проживающих.\n";
-    int flats = house->getAmountOfFlats();
-    for (int i = 0; i < flats; i++)
-    {
-        cout << i + 1 << "\t\t\t\t" << flat->getAmountOfResident();
-    }
-
-}
+//void printTable()
+//{
+//    House* house;
+//    Flat* flat;
+//    cout << "Дом "; 
+//    cout << house->getNameOfHouse();
+//    cout << "\nНомер квартиры.\tКоличество проживающих.\n";
+//
+//    int flats = house->getAmountOfFlats();
+//    for (int i = 0; i < flats; i++)
+//    {
+//        cout << i + 1 << "\t\t\t\t" << flat[i]->getAmountOfResident();
+//    }
+//
+//}
 
 
 int main()
@@ -28,7 +29,7 @@ int main()
     cout << "Добро пожаловать в программу в список дома.\n";
     cout << "Заполнение списка:\n";
     House();
-    int operation;
+    /*int operation;
     do {
         cout << "Введите номер операции(1 - вывести список квартир с количеством владельцев; 2 - просмотреть по номеру квартиры проживающих; 3 - удалить список; 4 - выход из программы): ";
         cin >> operation;
@@ -57,7 +58,7 @@ int main()
             break;
         }
         }
-    } while (operation != 4);
+    } while (operation != 4);*/
 }
 
 

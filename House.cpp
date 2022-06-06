@@ -13,6 +13,12 @@ House::House()
 	int amountOfFlats;
 	cin >> amountOfFlats;
 	setAmountOfFlats(amountOfFlats);
+	cout << "Дом " << *nameOfHouse;
+	cout << "\nНомер квартиры.\tКоличество проживающих.\n";
+	for (int i = 0; i < amountOfFlats; i++)
+	{
+		cout << i + 1 << "\t\t\t\t" << Flat.getAmountOfResident();
+	}
 }
 
 void House::setNameOfHouse(char buffer[30])
